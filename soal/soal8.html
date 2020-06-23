@@ -14,14 +14,66 @@
   }
 
   /* buat CSS di disini */
+  .red {
+    width: 500px;
+    height: 25px;
+    background-color: red;
+  }
+  .orange {
+    width: 500px;
+    height: 25px;
+    background-color: orange;
+  }
+  .yellow {
+    width: 500px;
+    height: 25px;
+    background-color: yellow;
+  }
+  .green {
+    width: 500px;
+    height: 25px;
+    background-color: green;
+  }
+  .blue {
+    width: 500px;
+    height: 25px;
+    background-color: blue;
+  }
+  .purple {
+    width: 500px;
+    height: 25px;
+    background-color: purple;
+  }
+  
 </style>
 
 <body>
-  <div>Buat pelangi di sini</div>
+  <div>
+    <div class="red"></div>
+    <div class="orange"></div>
+    <div class="yellow"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+    <div class="purple"></div>
+  </div>
 </body>
 
 <script>
   // buat script disini
+  function animasiPelangi(){
+    var arrayPelangi = ["red", "orange", "yellow", "green", "blue", "purple"];
+    var i = 0;
+    var t = setInterval(function pelangi() {
+        var divPelangi = document.getElementsByClassName(arrayPelangi[i].toString());
+        i++;
+        if (!arrayPelangi[i]) {
+          i=0;
+        }
+        divPelangi.style.background = arrayPelangi[i].toString();
+      }
+    , 100);
+  }
+  
 </script>
 
 </html>

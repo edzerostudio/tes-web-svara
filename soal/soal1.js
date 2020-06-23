@@ -10,7 +10,12 @@
  * @return sebuah @Object data diri
  */
 function membuatObject() {
-  const objectSaya = {}; //membuat variabel Object
+  const objectSaya = {
+    "nama": "Restu Edo Setiaji",
+    "alamat": "Cimahi",
+    "hobi": "Membaca",
+    "hp": "081213142180"
+  }; //membuat variabel Object
 
   //tempat coding disini
 

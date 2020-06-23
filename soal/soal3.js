@@ -5,7 +5,10 @@
  * @return sebuah @Object
  */
 function ambilInfoArray(dataArray) {
-  const dataObject = {}; //membuat variabel Object
+  const dataObject = {
+    "data": dataArray,
+    "panjangData": dataArray.length
+  }; //membuat variabel Object
 
   //tempat coding disini
 
