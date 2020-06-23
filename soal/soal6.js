@@ -12,7 +12,7 @@ function hapusArray(arrayBuah, arrayHewan) {
   //tempat coding disini
   for (let i = 0; i < arrayBuah.length; i++) {
     for (let j = 0; j < arrayHewan.length; j++) {
-      if(arrayBuah[i].toString() == arrayHewan[j].toString()){
+      if(arrayBuah[i] == arrayHewan[j]){
         campuran = true;
       }
     }

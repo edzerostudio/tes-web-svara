@@ -64,16 +64,15 @@
     var arrayPelangi = ["red", "orange", "yellow", "green", "blue", "purple"];
     var i = 0;
     var t = setInterval(function pelangi() {
-        var divPelangi = document.getElementsByClassName(arrayPelangi[i].toString());
+        var divPelangi = document.getElementsByClassName(arrayPelangi[i]);
         i++;
         if (!arrayPelangi[i]) {
           i=0;
         }
-        divPelangi.style.background = arrayPelangi[i].toString();
+        divPelangi.style.background = arrayPelangi[i];
       }
     , 100);
   }
-  
 </script>
 
 </html>
